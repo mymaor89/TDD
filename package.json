@@ -1,0 +1,23 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "TDD With Yaniv",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mymaor89/TDD.git"
+  },
+  "author": "Maor Yatskan, Anna Rogozin, Georgi Dejabarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mymaor89/TDD/issues"
+  },
+  "homepage": "https://github.com/mymaor89/TDD#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0"
+  }
+}
