@@ -1,5 +1,6 @@
 const chai = require('chai')
 const assertArrays = require('chai-arrays');
+var bubble = require('../bubble-sort');
 chai.use(assertArrays);
 const expect = require('chai').expect;
 var original = [2,3,6,4,1]
