@@ -1,6 +1,6 @@
 var chai = require('chai')
 var expect = require('chai').expect;
-var bmi = require('../bmi').bmi
+var bmi = require('../bmi');
 describe('BMI', () => {
     it('should output healthy', () => {
         expect(bmi(170,60)).to.be.equal('healthy')
