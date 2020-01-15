@@ -1,27 +1,31 @@
 var chai = require('chai')
 var expect = require('chai').expect;
+var bmiCalc = require('../bmi.calc');
 var bmi = require('../bmi');
 describe('BMI', () => {
     describe('Valid params',()=>{
         it('should output healthy', () => {
-            expect(bmi(170,60)).to.be.equal('healthy')
+            // console.log("bmicalc "  + bmiCalc)
+            // console.log(bmiCalc(170,60))
+            // console.log(bmi(bmiCalc(170,60)))
+            expect(bmi(bmiCalc(170,60))).to.be.equal('healthy')
         })
         it('should output underweight', () => {
-            expect(bmi(170,53)).to.be.equal('underweight')
+            expect(bmi(bmiCalc(170,53))).to.be.equal('underweight')
         })
         it('should output overweight', () => {
-            expect(bmi(170,78)).to.be.equal('overweight')
+            expect(bmi(bmiCalc(170,78))).to.be.equal('overweight')
         })
         it('should output obese', () => {
-            expect(bmi(170,97)).to.be.equal('obese')
+            expect(bmi(bmiCalc(170,97))).to.be.equal('obese')
         })
     })
     describe('Invalid params',()=>{
         it('should return -1 for invalid values', () => {
-            expect(bmi(170,0)).to.be.equal(-1)
+            expect(bmiCalc(170,0)).to.be.equal(-1)
         })
         it('should return -1 for invalid values', () => {
-            expect(bmi(0,60)).to.be.equal(-1)
+            expect(bmiCalc(0,60)).to.be.equal(-1)
         })
     })
 
