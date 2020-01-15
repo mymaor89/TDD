@@ -5,9 +5,6 @@ var bmi = require('../bmi');
 describe('BMI', () => {
     describe('Valid params',()=>{
         it('should output healthy', () => {
-            // console.log("bmicalc "  + bmiCalc)
-            // console.log(bmiCalc(170,60))
-            // console.log(bmi(bmiCalc(170,60)))
             expect(bmi(bmiCalc(170,60))).to.be.equal('healthy')
         })
         it('should output underweight', () => {
