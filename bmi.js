@@ -1,45 +1,25 @@
 
+const bmi_calc = require('./bmi_calc')
 module.exports = function bmi(height_cm, weight_kg)
 {
-   height = height_cm/100;
-   bmi_result = weight_kg/(Math.pow(height,2))
-   switch(true) {
-      case bmi_result <= 0:
-         {
-            result = -1
-            break;
-         }
-      case bmi_result < 18.5:
-         {
-            result = "underweight"
-            break;
-         }
-      case  bmi_result < 25:
-         {
-            result = "healthy"
-            break;
-         }
-      case bmi_result < 30:
-         {
-            result = "overweight"
-            break;
-         }
-      case bmi_result < 40:
-         {
-            result = "obese"
-            break;
-         }
-      case 40 > bmi_result:
-         {
-            result = -1
-            break;
-         }
-      default:
-         {
-            result = -1
-         }
-      }
-   return result;
+   bmi_result = bmi_calc(height_cm,weight_kg);
+
+   if (bmi_result == undefined){
+      return bmi_result;
+   }
+   else if (0 < bmi_result && bmi_result < 18.5){
+      return "underweight";
+   }
+   else if (18.5 <=  bmi_result && bmi_result < 25){
+      return "healthy";
+   }
+   else if (25 <= bmi_result && bmi_result < 30){
+      return "overweight";
+   }
+   else if (30 <= bmi_result && bmi_result < 40){
+      return "obese";
+   }
+
 }
 
 
