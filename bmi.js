@@ -6,7 +6,7 @@ module.exports = function bmi(height_cm, weight_kg)
    switch(true) {
       case bmi_result <= 0:
          {
-            result = -1;
+            result = undefined;
             break;
          }
       case bmi_result < 18.5:
