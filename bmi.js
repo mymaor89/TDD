@@ -1,5 +1,5 @@
 
-const bmi_calc = require('./bmi.calc')
+const bmi_calc = require('./bmi_calc')
 module.exports = function bmi(height_cm, weight_kg)
 {
    bmi_result = bmi_calc(height_cm,weight_kg);

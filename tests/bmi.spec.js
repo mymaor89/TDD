@@ -1,6 +1,5 @@
 var chai = require('chai')
 var expect = require('chai').expect;
-var bmiCalc = require('../bmi.calc');
 var bmi = require('../bmi');
 describe('BMI', () => {
     describe('Valid params',()=>{
