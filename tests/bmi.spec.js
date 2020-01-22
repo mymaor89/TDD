@@ -18,11 +18,11 @@ describe('BMI', () => {
         })
     })
     describe('Invalid params',()=>{
-        it('should return -1 for invalid values', () => {
-            expect(bmiCalc(170,0)).to.be.equal(-1)
+        it('should return undefined for invalid values', () => {
+            expect(bmiCalc(170,0)).to.be.equal(undefined)
         })
-        it('should return -1 for invalid values', () => {
-            expect(bmiCalc(0,60)).to.be.equal(-1)
+        it('should return undefined for invalid values', () => {
+            expect(bmiCalc(0,60)).to.be.equal(undefined)
         })
     })
 
