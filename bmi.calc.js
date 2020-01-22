@@ -6,14 +6,14 @@ module.exports = function bmiCalc(height_cm, weight_kg)
    switch(true) {
     case bmi_result <= 0:
        {
-          bmi_result = -1
+          bmi_result = -1;
           break;
        }
     case 40 < bmi_result:
        {
-          bmi_result = -1
+          bmi_result = -1;
           break;
        }
     }
-   return bmi_result
+   return bmi_result;
 }    
