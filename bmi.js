@@ -31,12 +31,12 @@ module.exports = function bmi(height_cm, weight_kg)
          }
       case 40 > bmi_result:
          {
-            result = -1;
+            result = undefined;
             break;
          }
       default:
          {
-            result = -1;
+            result = undefined;
          }
       }
    return result;
