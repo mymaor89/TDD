@@ -3,7 +3,7 @@ const bmi_calc = require('./bmi.calc')
 module.exports = function bmi(height_cm, weight_kg)
 {
    bmi_result = bmi_calc(height_cm,weight_kg);
-   
+
    if (bmi_result == undefined){
       return bmi_result;
    }
@@ -19,9 +19,7 @@ module.exports = function bmi(height_cm, weight_kg)
    else if (30 <= bmi_result && bmi_result < 40){
       return "obese";
    }
-   else if (40 < bmi_result){
-      return undefined;
-   }
+
 }
 
 
